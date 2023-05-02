@@ -12,3 +12,12 @@ CREATE TABLE usuario
     fone_usuario varchar(30) NULL,
     senha varchar(30) NOT NULL
 );
+
+/*
+use projetoCadastro;
+insert into usuario
+(name_user, fone_user, email_user, senha)
+values ('Leonardo','(18) 3622-9046', 'leo@proton.me', '123456');
+
+select * from usuario;
+*/

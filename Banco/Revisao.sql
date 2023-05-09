@@ -11,3 +11,4 @@
 -- 		insert into tabela (colunas) values (valores)
 -- 		delete from tabela
 -- 		update coluna from tabela
+-- update usuario set name_user = "Zezinho", email_user = "Zezinho@gmail.com" where id_user = 1;

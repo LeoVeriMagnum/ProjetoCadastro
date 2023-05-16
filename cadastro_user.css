@@ -51,3 +51,18 @@ form input {
     width: 90%;
     border-style: outset;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 30vh;
+    height: 5vh;
+    font-size: 1em;
+}
+.submit{
+    margin: 0 auto;
+    width: 90%;
+}

@@ -37,6 +37,6 @@
              } while ($row = mysqli_fetch_array($result))
         ?>
     </table>
-    <a href="cadastro_user.html"><button>Tela Inicial</button></a>
+    <a href="index.php"><button>Tela Inicial</button></a>
 </body>
 </html>

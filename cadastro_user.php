@@ -15,7 +15,7 @@
 
     $sql .= "values ('".$nome."','".$fone."', '".$email."', '".$senha."')";
 
-    echo $sql."<br>";
+    //echo $sql."<br>";
     $result = mysqli_query($con, $sql);
     if ($result)
         echo "Dados cadastrados com sucesso!";

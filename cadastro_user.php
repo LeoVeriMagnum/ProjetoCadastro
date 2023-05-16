@@ -5,7 +5,7 @@
     $fone = $_POST['fone'];
     $senha = $_POST['senha'];
 
-    $sql = "SELECT * FROM usuario WHERE email_user = '$email'";
+    $sql = "select * from usuario where email_user = '$email'";
     $result = mysqli_query($con, $sql);
 
     if (mysqli_num_rows($result) > 0) {
@@ -21,7 +21,7 @@
     echo "Telefone: $fone <br>";
     echo "Senha: $senha <br>";
     
-    $sql = "insert into usuario (naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaame_user, fone_user, email_user, senha)";
+    $sql = "insert into usuario (name_user, fone_user, email_user, senha)";
 
     $sql .= "values ('".$nome."','".$fone."', '".$email."', '".$senha."')";
 

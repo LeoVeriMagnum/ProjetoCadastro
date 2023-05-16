@@ -23,6 +23,7 @@
             <th>E-mail</th>
             <th>Telefone</th>
             <th>Alterar</th>
+            <th>Apagar usuario</th>
         </tr>
         <?php
             do{
@@ -33,6 +34,8 @@
                     echo "<td>".$row['fone_user']."</td>";
                     echo "<td><a href='altera_usuario.php?id_user=" 
                     .$row['id_user']."'>Alterar</a> </td>";
+                    echo "<td><a href='deletar_usuario.php?id_user=" 
+                    .$row['id_user']."'>Deletar</a> </td>";
                     echo "</tr>";
              } while ($row = mysqli_fetch_array($result))
         ?>

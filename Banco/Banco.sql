@@ -10,7 +10,8 @@ CREATE TABLE usuario
     name_user varchar(50) NOT NULL,
     email_user varchar(50) NOT NULL UNIQUE,
     fone_user varchar(30) NULL,
-    senha varchar(30) NOT NULL
+    senha varchar(30) NOT NULL,
+    foto varchar(100) null
 );
 
 /*

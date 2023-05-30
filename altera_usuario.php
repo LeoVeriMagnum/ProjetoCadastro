@@ -20,7 +20,7 @@
     <div class="container">
         <div class="box-1">
     <h1>Altera Dados - IFSP</h1>
-    <form action="altera_usuario_exe.php" method="post">
+    <form action="altera_usuario_exe.php" method="post" enctype="multipart/form-data">
         <input name="id_user" type="hidden" 
         value="<?php echo $row['id_user']?>">
         <div>
@@ -45,6 +45,15 @@
             <label for="senha">Senha: </label>
             <input type="password" name="senha" id="senha"
             value="<?php echo $row['senha']?>">
+        </div>
+        <div>
+            <?php if($row['foto'] == "")
+                        echo "<td></td>";
+                        else    
+                        echo "<td><img src='".$row['foto']."' width='200px' height='200px'/></td>";
+            ?>
+            <input type="file" name="foto" id="foto" accept="image"
+            value="<?php echo $row['foto']?>">
         </div>
         <input type="submit" value="Salvar" class="buttom">
     </form>

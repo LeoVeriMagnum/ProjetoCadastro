@@ -41,6 +41,7 @@
     echo "Telefone: $fone <br>";
     echo "Senha: $senha <br>";
     
+    
     $sql = "insert into usuario (name_user, fone_user, email_user, senha, foto)";
 
     $sql .= "values ('".$nome."','".$fone."', '".$email."', '".$senha."','".$nome_foto."')";
